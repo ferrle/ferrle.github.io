@@ -18,7 +18,7 @@ p {
 
   h2 {
     margin: 60px 0;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 3.5rem;
   }
 
@@ -82,9 +82,11 @@ p {
     padding-bottom: 20px;
     font-size: 1.6rem;
   }
+
   .section:after {
     border-top-color: transparent;
   }
+
   ul {
     display: inline-block;
     text-align: left;
@@ -106,6 +108,12 @@ p {
 
 
 @media screen and (max-width: @screen-xs-max) {
+  .section {
+    h2 {
+      margin: 30px 0;
+    }
+  }
+  
   p {
     font-size: 1.8rem;
   }
