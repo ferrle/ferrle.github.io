@@ -1,0 +1,155 @@
+p {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.subheader * {
+  font-weight: 400;
+}
+
+.bio {
+  padding-left: 10px;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  position: relative;
+
+  h2 {
+    margin: 60px 0;
+    font-weight: 300;
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 2.4rem;
+  }
+
+  &:after {
+    content:'';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-left: -30px;
+    width: 0;
+    height: 0;
+    border-top: solid 30px #e15915;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+  }
+}
+
+.padding-top {
+  padding: 60px 0 0;
+}
+
+#about {
+  background: @about-color;
+  .section:after {
+    border-top-color: transparent;
+  }
+}
+
+#team {
+  background: @team-color;
+  .section:after {
+    border-top-color: @about-color;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+#explore {
+  background: @explore-color;
+  .section:after {
+    border-top-color: @team-color;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+#contact {
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+
+  .section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+  }
+  .section:after {
+    border-top-color: transparent;
+  }
+  ul {
+    display: inline-block;
+    text-align: left;
+    padding-left: 15px;
+  }
+  .logo {
+    vertical-align: top;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+    color: #555;
+  }
+}
+
+
+@media screen and (max-width: @screen-xs-max) {
+  p {
+    font-size: 1.8rem;
+  }
+
+  .bio {
+    margin-top: 15px;
+  }
+
+  #team img {
+    width: 50%;
+  }
+
+  #explore {
+    .row > div {
+      margin-bottom: 20px;
+    }
+
+    .caption {
+      display: inline-block;
+      width: 50%;
+    }
+
+    img {
+      width: auto;
+      height: 300px;
+    }
+  } 
+
+  .subheader {
+    float: initial !important;
+
+    p {
+      text-align: center !important;
+    }
+  }
+
+  .subheader+div {
+    p {
+      text-align: left !important;
+    }
+  }
+
+  #contact ul {
+    text-align: center;
+    padding: 0;
+  }
+}

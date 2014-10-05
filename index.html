@@ -3,40 +3,166 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ferrle</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,300" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/main.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <img class="logo" src="assets/images/logo.png" width="50" height="50" alt="Logo">
+          <h1 class="title"><a href="/">Ferrle</a></h1>
+        </div>
+      </div>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      <div class="row hidden-xs links text-center">
+        <div class="col-sm-3">
+          <a href="#about" id="about-link">About</a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#team" id="team-link">Team</a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#explore" id="explore-link">Explore</a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#contact" id="contact-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div class="hero">
+    <div class="tagline">
+      Insert additional tagline here
+    </div>
+  </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+  <div id="about">
+    <div class="container section">
+      <h2 class="text-center">About</h2>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+      <div class="row">
+        <div class="col-sm-3 subheader">
+          <p>What We Do</p>
+        </div>
+        <div class="col-sm-9">
+          <p>At Ferrle, we love simplicity. Our product helps to simplify the home furnishings process by providing users with a tool to automate the measuring of spaces, interior design, and online buying process. We bring you directly to the manufacturers and provide you with the ultimate furniture buying experience.</p>
+        </div>
+      </div>
+
+      <div class="row text-right padding-top">
+        <div class="col-sm-3 subheader pull-right">
+          <p>Our History</p>
+        </div>
+        <div class="col-sm-9">
+          <p>Lincoln and Ralf developed the idea for Ferrle as roommates at USC. Lincoln had been exploring ideas for the furniture industry and pitched a consumer facing 3-D interior design app to Ralf. Lincoln then spent months creating and refining a business concept and plan. From there, the quest to launch Ferrle began.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="team">
+    <div class="container section">
+      <h2 class="text-center">Meet the Team</h2>
+      <div class="row">
+        <div class="col-sm-3 text-center">
+          <img src="http://placehold.it/250x250" class="img-circle">
+        </div>
+        <div class="col-sm-9">
+          <p class="bio">Meet Lincoln Yeung. He began his career working in his father’s art gallery as a secretary, salesperson, and gallery aide. After spending 6 years in the industry, he moved on and earned two degrees from USC: a B.S. in Accounting and a B.S. in Business Administration. Lincoln is our team’s jack of all trades. He fills in for every possible non-technical role to give our technical team the best possible support.</p>
+        </div>
+      </div>
+
+      <div class="row padding-top">
+        <div class="col-sm-3 text-center">
+          <img src="http://placehold.it/250x250" class="img-circle">
+        </div>
+        <div class="col-sm-9">
+          <p class="bio">Meet Ralf Cheung. He studies at USC and is finishing up his M.S. Computer Science degree after completing a bachelor’s in the same field. Ralf is our resident tech guy, and he’s able to pump out code like a machine.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="explore"> 
+    <div class="container section">
+      <h2 class="text-center">Explore</h2>
+      <div class="row text-center">
+        <div class="col-sm-2 col-sm-offset-1">
+          <img src="http://placehold.it/100x400" class="img-thumbnail">
+          <div class="caption">
+            <h4>Explore</h4>
+            <p>Explore the styles that you love
+          </div>
+        </div>
+        <div class="col-sm-2 clearfix">
+          <img src="http://placehold.it/100x400" class="img-thumbnail">
+          <div class="caption">
+            <h4>Scan</h4>
+            <p>Scan your home in 3-D and watch the model appear</p>
+          </div>
+        </div>
+        <div class="col-sm-2 clearfix">
+          <img src="http://placehold.it/100x400" class="img-thumbnail">
+          <div class="caption">
+            <h4>Review</h4>
+            <p>Watch our software take the guess work out of designing your space</p>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <img src="http://placehold.it/100x400" class="img-thumbnail">
+          <div class="caption">
+            <h4>Edit</h4>
+            <p>Customize until you have your dream home</p>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <img src="http://placehold.it/100x400" class="img-thumbnail">
+          <div class="caption">
+            <h4>Purchase</h4>
+            <p>Complete your purchase and get ready for comfort</p>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="container section">
+      <div class="row">
+        <div class="col-sm-5">
+          <img class="logo hidden-sm hidden-xs" src="assets/images/logo.png" width="70" height="70" alt="Logo">
+          <ul>
+            <li><a href="#contact">Returns and Exchanges</a></li>
+            <li><a href="#contact">Terms of Use</a></li>
+            <li><a href="#contact">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 text-center">
+          <a href="#contact">contact@ferrle.com</a>
+          <div>
+            <a href="#contact">Twitter</a> |
+            <a href="#contact">Facebook</a>
+          </div>
+          <span class="copyright">Copyright &copy; 2014 Ferrle</span>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
