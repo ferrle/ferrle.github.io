@@ -24,8 +24,10 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-center">
-          <img class="logo" src="assets/images/logo.png" width="50" height="50" alt="Logo">
-          <h1 class="title"><a href="/">Ferrle</a></h1>
+          <a href="/">
+            <img class="logo" src="assets/images/logo.png" width="50" height="50" alt="Logo">
+            <h1 class="title">Ferrle</h1>
+          </a>
         </div>
       </div>
 
@@ -81,7 +83,7 @@
       <h2 class="text-center">Meet the Team</h2>
       <div class="row">
         <div class="col-sm-3 text-center">
-          <img src="http://placehold.it/250x250" class="img-circle">
+          <img src="assets/images/team1.jpg" class="img-circle" alt="Lincoln Yeung">
         </div>
         <div class="col-sm-9">
           <p class="bio">Meet Lincoln Yeung. He began his career working in his father’s art gallery as a secretary, salesperson, and gallery aide. After spending 6 years in the industry, he moved on and earned two degrees from USC: a B.S. in Accounting and a B.S. in Business Administration. Lincoln is our team’s jack of all trades. He fills in for every possible non-technical role to give our technical team the best possible support.</p>
@@ -104,35 +106,35 @@
       <h2 class="text-center">Explore</h2>
       <div class="row text-center">
         <div class="col-sm-2 col-sm-offset-1">
-          <img src="http://placehold.it/100x400" class="img-thumbnail">
+          <img src="assets/images/explore1.jpg" class="img-thumbnail">
           <div class="caption">
             <h4>Explore</h4>
             <p>Explore the styles that you love
           </div>
         </div>
         <div class="col-sm-2 clearfix">
-          <img src="http://placehold.it/100x400" class="img-thumbnail">
+          <img src="assets/images/explore2.jpg" class="img-thumbnail">
           <div class="caption">
             <h4>Scan</h4>
             <p>Scan your home in 3-D and watch the model appear</p>
           </div>
         </div>
         <div class="col-sm-2 clearfix">
-          <img src="http://placehold.it/100x400" class="img-thumbnail">
+          <img src="assets/images/explore3.jpg" class="img-thumbnail">
           <div class="caption">
             <h4>Review</h4>
             <p>Watch our software take the guess work out of designing your space</p>
           </div>
         </div>
         <div class="col-sm-2">
-          <img src="http://placehold.it/100x400" class="img-thumbnail">
+          <img src="assets/images/explore4.png" class="img-thumbnail">
           <div class="caption">
             <h4>Edit</h4>
             <p>Customize until you have your dream home</p>
           </div>
         </div>
         <div class="col-sm-2">
-          <img src="http://placehold.it/100x400" class="img-thumbnail">
+          <img src="assets/images/explore5.png" class="img-thumbnail">
           <div class="caption">
             <h4>Purchase</h4>
             <p>Complete your purchase and get ready for comfort</p>
@@ -149,9 +151,9 @@
         <div class="col-sm-5">
           <img class="logo hidden-sm hidden-xs" src="assets/images/logo.png" width="70" height="70" alt="Logo">
           <ul>
-            <li><a href="#contact">Returns and Exchanges</a></li>
-            <li><a href="#contact">Terms of Use</a></li>
-            <li><a href="#contact">Privacy</a></li>
+            <li><a href="#contact" data-toggle="modal" data-target="#returnsModal">Returns and Exchanges</a></li>
+            <li><a href="#contact" data-toggle="modal" data-target="#termsModal">Terms of Use</a></li>
+            <li><a href="#contact" data-toggle="modal" data-target="#privacyModal">Privacy</a></li>
           </ul>
         </div>
         <div class="col-sm-3 text-center">
@@ -167,7 +169,59 @@
     </div>
   </div>
 
+  <div class="modal fade" id="returnsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Returns and Exchanges</h4>
+        </div>
+        <div class="modal-body">
+          Coming Soon!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Terms of Use</h4>
+        </div>
+        <div class="modal-body">
+          Coming Soon!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Privacy</h4>
+        </div>
+        <div class="modal-body">
+          Coming Soon!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
