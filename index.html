@@ -35,7 +35,7 @@
             $.ajax({
               url:'http://beta.ferrle.info/betasignup?callback=?',
               dataType: 'jsonp',
-              jsonp: 'callback'
+              jsonp: 'callback',
               data: {'email':e},
               success: function(data){
                 alert(data);
