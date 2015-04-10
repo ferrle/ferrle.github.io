@@ -38,11 +38,11 @@
               dataType: 'jsonp',
               jsonp: 'callback',
               data: {'email':e},
-              success: function(data){
-                $('#replyMessage').css({'visibility': 'visible';})
+              statusCode:{
+                200: function(){
+                  $('#replyMessage').css({'visibility': 'visible'})
+                }
               }
-
-
             });
           }
        
